@@ -1,0 +1,25 @@
+.cont {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: khaki;
+}
+.card {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form > *, div > * {
+  margin-top: 20px;
+}
+

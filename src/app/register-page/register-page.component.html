@@ -1,0 +1,29 @@
+<section class="cont">
+  <p-card class="card col-sm-12 col-md-4">
+      <section class="form row">
+      <div class="user-photo col-md-6 col-sm-12">
+        <div class="photo-holder">
+          <p>Foto do Usuario</p>
+        </div>
+        <button pButton pRipple type="button" label="Carregar foto" disabled=true class="p-button-secondary"></button>
+      </div>
+
+      <div class="user-data col-md-6 col-sm-12">
+        <input type="text" class="p-inputtext-lg" placeholder="Nome"  pInputText />
+        <input type="text" class="p-inputtext-lg" placeholder="E-mail"  pInputText />
+        <input type="text" class="p-inputtext-lg" placeholder="Celular"  pInputText />
+        <input type="password" class="p-inputtext-lg" placeholder="Senha"  pInputText />
+        <input type="password" class="p-inputtext-lg" placeholder="Confirmar Senha"  pInputText />
+        <button pButton pRipple type="button" label="Cadastrar" class="p-button-success" (click)="showModal=!showModal"></button>
+      </div>
+
+      </section>
+
+  </p-card>
+</section>
+<app-modal header="Sucesso!" [displayModal]="showModal">
+  <div content>
+    <p class="header-modal">Usuario salvo com sucesso!</p>
+    <p class="description-modal">Confirme o e-mail para ativar a conta!</p>
+  </div>
+</app-modal>

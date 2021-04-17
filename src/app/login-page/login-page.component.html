@@ -1,0 +1,22 @@
+<section class="cont">
+<p-card class="card col-sm-12 col-md-4">
+  <h1 id="logo">Logo</h1>
+  <section class="form">
+    <div>
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText placeholder="E-mail" [(ngModel)]="email" />
+      </span>
+      <br>
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="password" pInputText placeholder="Senha" [(ngModel)]="password" />
+      </span>
+    </div>
+    <button pButton pRipple type="button" label="Entrar" class="p-button-success"></button>
+    <button pButton pRipple type="button" label="Cadastrar" class="p-button-info" routerLink="/cadastrar"></button>
+    <button pButton pRipple type="button" label="Recuperar senha" class="p-button-text" routerLink="/recuperar"></button>
+  </section>
+</p-card>
+
+</section>
